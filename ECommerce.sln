@@ -25,10 +25,49 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Config", "Config", "{407ECA
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docs", "Docs", "{139FEB45-13B1-49BF-972B-BC6FA8DB8E7E}"
 	ProjectSection(SolutionItems) = preProject
+		Docs\Architecture.md = Docs\Architecture.md
 		Docs\README.md = Docs\README.md
+		Docs\UseCases.md = Docs\UseCases.md
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Deployment", "Deployment", "{9995A55C-969A-4961-A313-A8582C64DA1D}"
+	ProjectSection(SolutionItems) = preProject
+		Deployment\docker-compose.yml = Deployment\docker-compose.yml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dockerfile", "Dockerfile", "{F7F6A26D-A100-49DF-8B91-019AC781D034}"
+	ProjectSection(SolutionItems) = preProject
+		Deployment\Dockerfile\New Text Document.txt = Deployment\Dockerfile\New Text Document.txt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "k8s", "k8s", "{BEE32152-1E0B-48FE-9BA8-CF41C821CD5E}"
+	ProjectSection(SolutionItems) = preProject
+		Deployment\k8s\api-deployment.yaml = Deployment\k8s\api-deployment.yaml
+		Deployment\k8s\api-service.yaml = Deployment\k8s\api-service.yaml
+		Deployment\k8s\postgres-deployment.yaml = Deployment\k8s\postgres-deployment.yaml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CI", "CI", "{AA36C188-6CF0-46FF-8D08-C16B11EDA2E0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "github", "github", "{5821347F-BC91-4D0B-97EA-7840BC06B8E1}"
+	ProjectSection(SolutionItems) = preProject
+		CI\github\dotnet-ci.yml = CI\github\dotnet-ci.yml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Build", "Build", "{79CB2BAF-A7DA-46B3-84B6-8FFB1998FBC0}"
+	ProjectSection(SolutionItems) = preProject
+		Build\README.md = Build\README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Directory.Build.props", "Directory.Build.props", "{35EAA3E8-AD96-450C-BA37-3CBF44404308}"
+	ProjectSection(SolutionItems) = preProject
+		Build\Directory.Build.props\New Text Document.txt = Build\Directory.Build.props\New Text Document.txt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Versioning.targets", "Versioning.targets", "{FA931AD7-CAB7-4C64-981B-FF56C78BE9A7}"
+	ProjectSection(SolutionItems) = preProject
+		Build\Versioning.targets\New Text Document.txt = Build\Versioning.targets\New Text Document.txt
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -121,6 +160,11 @@ Global
 		{F55FBE89-9E82-416F-AE2C-955B33F4BFE7} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 		{3FA1DD68-D4C5-4A61-8DF9-4223A965CA80} = {B288DA3C-49FC-4AB1-92D5-6F3C94988688}
 		{FD721520-16D7-4D82-93E4-9D132794F9ED} = {F55FBE89-9E82-416F-AE2C-955B33F4BFE7}
+		{F7F6A26D-A100-49DF-8B91-019AC781D034} = {9995A55C-969A-4961-A313-A8582C64DA1D}
+		{BEE32152-1E0B-48FE-9BA8-CF41C821CD5E} = {9995A55C-969A-4961-A313-A8582C64DA1D}
+		{5821347F-BC91-4D0B-97EA-7840BC06B8E1} = {AA36C188-6CF0-46FF-8D08-C16B11EDA2E0}
+		{35EAA3E8-AD96-450C-BA37-3CBF44404308} = {79CB2BAF-A7DA-46B3-84B6-8FFB1998FBC0}
+		{FA931AD7-CAB7-4C64-981B-FF56C78BE9A7} = {79CB2BAF-A7DA-46B3-84B6-8FFB1998FBC0}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7DEBCF06-8CB8-4367-96D6-8CC89D614146}
