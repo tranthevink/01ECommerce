@@ -4,6 +4,12 @@
     <ProjectReference Include="..\ECommerce.Domain\ECommerce.Domain.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Messaging\OtherImplementations\" />
+    <Folder Include="Persistence\NoSQL\" />
+    <Folder Include="Persistence\Relational\Migrations\" />
+  </ItemGroup>
+
   <PropertyGroup>
     <TargetFramework>net9.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
