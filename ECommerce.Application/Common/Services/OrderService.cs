@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ECommerce.Infrastructure.Services
+namespace ECommerce.Application.Common.Services
 {
-    internal class LoggingService
+    public class OrderService
     {
     }
 }
