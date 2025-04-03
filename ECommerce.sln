@@ -69,6 +69,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Versioning.targets", "Versi
 		Build\Versioning.targets\New Text Document.txt = Build\Versioning.targets\New Text Document.txt
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Mocks", "Mocks", "{CD196749-7082-434B-A2B4-233CDE08A4BA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -165,6 +167,7 @@ Global
 		{5821347F-BC91-4D0B-97EA-7840BC06B8E1} = {AA36C188-6CF0-46FF-8D08-C16B11EDA2E0}
 		{35EAA3E8-AD96-450C-BA37-3CBF44404308} = {79CB2BAF-A7DA-46B3-84B6-8FFB1998FBC0}
 		{FA931AD7-CAB7-4C64-981B-FF56C78BE9A7} = {79CB2BAF-A7DA-46B3-84B6-8FFB1998FBC0}
+		{CD196749-7082-434B-A2B4-233CDE08A4BA} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7DEBCF06-8CB8-4367-96D6-8CC89D614146}
