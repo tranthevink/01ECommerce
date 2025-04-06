@@ -1,4 +1,6 @@
 ﻿using ECommerce.Application.Interfaces;
+using ECommerce.Application.Queries.Product;
+using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ECommerce.API.Controllers
@@ -8,9 +10,11 @@ namespace ECommerce.API.Controllers
     public class ProductController : ControllerBase
     {
         private readonly ILoggerService _logger;
-        public ProductController(ILoggerService logger)
+        private readonly IMediator _mediator;
+        public ProductController(ILoggerService logger, IMediator mediator)
         {
             _logger = logger;
+            _mediator = mediator;
         }
         [HttpGet]
         public IActionResult GetAllProducts()
@@ -25,12 +29,15 @@ namespace ECommerce.API.Controllers
             return Ok(fakeProducts);
         }
         [HttpGet("{id}")]
-        public IActionResult GetProductById(Guid id)
+        public async Task<IActionResult> GetProductByIdAsync(Guid id)
         {
-            _logger.LogInfo($"GET product by id = {id} được gọi");
-            var product = new { Id = id, Name = $"Fake Product {id}", Price = 999 };
+            _logger.LogInfo($"GET product by id = {id} is called");
+            var result = await _mediator.Send(new GetProductByIdQuery(id));
 
-            return Ok(product);
+            if (result == null)
+                return NotFound();
+
+            return Ok(result);
         }
 
     }

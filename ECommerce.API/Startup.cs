@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-
+using ECommerce.Application.DependencyInjection;
 
 namespace ECommerce.API
 {
@@ -55,6 +55,7 @@ namespace ECommerce.API
                         options.RequireHttpsMetadata = !_env.IsDevelopment();
                         options.Audience = "ECommerce.API";
                     });
+            services.AddApplicationServices();
         }
 
         // Cấu hình middleware pipeline
