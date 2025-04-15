@@ -1,6 +1,7 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using System.Reflection;
 using MediatR;
+using ECommerce.Application.Common.ScanMediatR;
 
 namespace ECommerce.Application.DependencyInjection
 {
@@ -9,7 +10,7 @@ namespace ECommerce.Application.DependencyInjection
         public static IServiceCollection AddApplicationServices(this IServiceCollection services)
         {
             services.AddMediatR(cfg =>
-                cfg.RegisterServicesFromAssembly(Assembly.GetExecutingAssembly()));
+                cfg.RegisterServicesFromAssembly(typeof(MediatorEntryPoint).Assembly));
             return services;
         }
     }

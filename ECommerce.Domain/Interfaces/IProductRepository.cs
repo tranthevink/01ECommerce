@@ -10,6 +10,7 @@ namespace ECommerce.Domain.Interfaces
     public interface IProductRepository
     {
         Task<Product> GetProductByIdAsync(Guid id);
-        Task<IEnumerable<Product>> GetProductByIdAsync();
+        Task<IEnumerable<Product>> GetAllProductsAsync();
+        
     }
 }

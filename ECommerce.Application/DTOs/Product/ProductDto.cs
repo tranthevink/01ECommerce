@@ -5,7 +5,7 @@ using System.Reflection.Metadata;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ECommerce.Application.DTOs
+namespace ECommerce.Application.DTOs.Product
 {
     public class ProductDto
     {

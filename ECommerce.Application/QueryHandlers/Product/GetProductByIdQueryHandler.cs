@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using ECommerce.Application.DTOs;
+using ECommerce.Application.DTOs.Product;
 using ECommerce.Application.Queries.Product;
 using ECommerce.Domain.Interfaces;
 using MediatR;

@@ -8,5 +8,7 @@ using MediatR;
 
 namespace ECommerce.Application.Queries.Product
 {
-    public record GetProductByIdQuery(Guid Id) : IRequest<ProductDto>;
+    public class GetAllProductsQuery : IRequest<List<ProductDto>>
+    {
+    }
 }
